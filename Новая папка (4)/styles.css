@@ -1,0 +1,112 @@
+/* Общие стили для всей страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Фоновый цвет страницы */
+}
+
+/* Стили для шапки страницы */
+header {
+    background-color: rgba(7, 14, 228, 0.8); /* Цвет фона с прозрачностью */
+    padding: 10px;
+    backdrop-filter: blur(30px); /* Эффект блюра */
+}
+
+
+/* Стили для навигационного меню */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Плавное изменение цвета текста при hover */
+}
+
+nav a:hover {
+    color: #8e44ad; /* Фиолетовый цвет текста при наведении */
+}
+
+/* Стили для секций с контентом */
+section {
+    padding: 20px;
+}
+
+/* Стили для раздела "Home" */
+#home {
+    background-image: url('img/glaw.jpg'); /* Путь к изображению */
+    background-size: cover; /* Растягиваем изображение на весь фон */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Запрещаем повторение изображения */
+    color: rgb(0, 0, 0);
+    height: 100vh; /* Устанавливаем высоту раздела в 100% высоты окна браузера */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стили для раздела "Services" */
+#services {
+    display: flex; /* Используем flex-контейнер */
+    background-color: #5dade2; /* Голубой цвет фона раздела */
+    color: #333;
+    height: 100vh
+}
+
+#services-text {
+    flex: 1; /* Занимает доступное пространство */
+    padding: 20px;
+}
+
+#services-image {
+    flex: 1; /* Занимает доступное пространство */
+    background-image: url('img/oserv.jpg'); /* Путь к изображению */
+    background-size: contain;
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Запрещаем повторение изображения */
+    height: 100vh
+}
+
+/* Стили для раздела "Portfolio" */
+#portfolio {
+    display: flex; /* Используем flex-контейнер */
+    background-color: #85c1e9; /* Светло-голубой цвет фона раздела */
+    color: #333;
+    height: 100vh
+}
+#portfolio-text {
+    flex: 1; /* Занимает доступное пространство */
+    padding: 20px;
+}
+#portfolio-image {
+    flex: 1; /* Занимает доступное пространство */
+    background-image: url('img/port.jpg'); /* Путь к изображению */
+    background-size: contain;
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Запрещаем повторение изображения */
+    height: 100vh
+}
+/* Стили для раздела "Contact" */
+#contact {
+    background-color: #aed6f1; /* Голубой цвет фона раздела */
+    color: #333;
+}
+
+/* Стили для нижнего колонтитула страницы */
+footer {
+    background-color: #3498db; /* Цвет фона футера */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
